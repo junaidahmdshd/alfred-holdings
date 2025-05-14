@@ -134,7 +134,7 @@ export const PortfolioSection = () => {
               className="w-full"
             >
               {portfolioItems.map((item) => (
-                <SwiperSlide key={item.id} className="!w-[308px] !max-w-[308px]">
+                <SwiperSlide key={item.id} className="!w-[280px] !max-w-[280px]">
                   <PortfolioCardMobile item={item} />
                 </SwiperSlide>
               ))}

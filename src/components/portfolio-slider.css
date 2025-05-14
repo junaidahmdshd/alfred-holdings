@@ -1,11 +1,12 @@
 /* Custom styles for portfolio slider */
 .portfolio-slider .swiper {
-  overflow: visible !important;
+  overflow: hidden !important;
   padding-bottom: 40px !important;
+  width: 100% !important;
 }
 
 .portfolio-slider .swiper-pagination {
-  bottom: -5px !important;
+  bottom: 0 !important;
   position: absolute;
 }
 
@@ -25,9 +26,12 @@
 
 .portfolio-slider .swiper-slide {
   height: auto;
+  width: auto !important;
+  max-width: 100% !important;
 }
 
 /* Set fixed height for mobile cards */
 .portfolio-slider .swiper-slide > div {
   height: 592px;
+  width: 100%;
 } 

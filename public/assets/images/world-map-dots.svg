@@ -1,0 +1,129 @@
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g opacity="0.8">
+    <!-- Africa -->
+    <circle cx="400" cy="250" r="3" fill="#A5D6FF" />
+    <circle cx="410" cy="240" r="3" fill="#A5D6FF" />
+    <circle cx="390" cy="260" r="3" fill="#A5D6FF" />
+    <circle cx="400" cy="270" r="3" fill="#A5D6FF" />
+    <circle cx="410" cy="260" r="3" fill="#A5D6FF" />
+    <circle cx="420" cy="250" r="3" fill="#A5D6FF" />
+    <circle cx="380" cy="240" r="3" fill="#A5D6FF" />
+    <circle cx="370" cy="230" r="3" fill="#A5D6FF" />
+    <circle cx="380" cy="220" r="3" fill="#A5D6FF" />
+    <circle cx="390" cy="230" r="3" fill="#A5D6FF" />
+    <circle cx="400" cy="220" r="3" fill="#A5D6FF" />
+    <circle cx="410" cy="210" r="3" fill="#A5D6FF" />
+    <circle cx="420" cy="220" r="3" fill="#A5D6FF" />
+    
+    <!-- Europe -->
+    <circle cx="430" cy="180" r="3" fill="#A5D6FF" />
+    <circle cx="440" cy="170" r="3" fill="#A5D6FF" />
+    <circle cx="420" cy="170" r="3" fill="#A5D6FF" />
+    <circle cx="410" cy="160" r="3" fill="#A5D6FF" />
+    <circle cx="400" cy="150" r="3" fill="#A5D6FF" />
+    <circle cx="390" cy="140" r="3" fill="#A5D6FF" />
+    <circle cx="380" cy="150" r="3" fill="#A5D6FF" />
+    <circle cx="370" cy="160" r="3" fill="#A5D6FF" />
+    <circle cx="360" cy="170" r="3" fill="#A5D6FF" />
+    <circle cx="350" cy="160" r="3" fill="#A5D6FF" />
+    <circle cx="340" cy="150" r="3" fill="#A5D6FF" />
+    
+    <!-- Asia -->
+    <circle cx="480" cy="180" r="3" fill="#A5D6FF" />
+    <circle cx="490" cy="190" r="3" fill="#A5D6FF" />
+    <circle cx="500" cy="180" r="3" fill="#A5D6FF" />
+    <circle cx="510" cy="170" r="3" fill="#A5D6FF" />
+    <circle cx="520" cy="160" r="3" fill="#A5D6FF" />
+    <circle cx="530" cy="170" r="3" fill="#A5D6FF" />
+    <circle cx="540" cy="180" r="3" fill="#A5D6FF" />
+    <circle cx="550" cy="170" r="3" fill="#A5D6FF" />
+    <circle cx="560" cy="160" r="3" fill="#A5D6FF" />
+    <circle cx="570" cy="170" r="3" fill="#A5D6FF" />
+    <circle cx="580" cy="180" r="3" fill="#A5D6FF" />
+    <circle cx="590" cy="190" r="3" fill="#A5D6FF" />
+    <circle cx="600" cy="180" r="3" fill="#A5D6FF" />
+    <circle cx="470" cy="200" r="3" fill="#A5D6FF" />
+    <circle cx="460" cy="210" r="3" fill="#A5D6FF" />
+    <circle cx="450" cy="220" r="3" fill="#A5D6FF" />
+    <circle cx="440" cy="220" r="3" fill="#A5D6FF" />
+    <circle cx="430" cy="230" r="3" fill="#A5D6FF" />
+    <circle cx="440" cy="240" r="3" fill="#A5D6FF" />
+    <circle cx="450" cy="250" r="3" fill="#A5D6FF" />
+    <circle cx="460" cy="240" r="3" fill="#A5D6FF" />
+    <circle cx="470" cy="230" r="3" fill="#A5D6FF" />
+    <circle cx="480" cy="220" r="3" fill="#A5D6FF" />
+    <circle cx="490" cy="230" r="3" fill="#A5D6FF" />
+    <circle cx="500" cy="220" r="3" fill="#A5D6FF" />
+    <circle cx="510" cy="210" r="3" fill="#A5D6FF" />
+    <circle cx="520" cy="200" r="3" fill="#A5D6FF" />
+    <circle cx="530" cy="210" r="3" fill="#A5D6FF" />
+    <circle cx="540" cy="220" r="3" fill="#A5D6FF" />
+    <circle cx="550" cy="210" r="3" fill="#A5D6FF" />
+    <circle cx="560" cy="200" r="3" fill="#A5D6FF" />
+    <circle cx="570" cy="210" r="3" fill="#A5D6FF" />
+    <circle cx="580" cy="220" r="3" fill="#A5D6FF" />
+    
+    <!-- North America -->
+    <circle cx="200" cy="180" r="3" fill="#A5D6FF" />
+    <circle cx="210" cy="170" r="3" fill="#A5D6FF" />
+    <circle cx="220" cy="160" r="3" fill="#A5D6FF" />
+    <circle cx="230" cy="150" r="3" fill="#A5D6FF" />
+    <circle cx="240" cy="160" r="3" fill="#A5D6FF" />
+    <circle cx="250" cy="170" r="3" fill="#A5D6FF" />
+    <circle cx="260" cy="160" r="3" fill="#A5D6FF" />
+    <circle cx="270" cy="150" r="3" fill="#A5D6FF" />
+    <circle cx="280" cy="160" r="3" fill="#A5D6FF" />
+    <circle cx="290" cy="170" r="3" fill="#A5D6FF" />
+    <circle cx="200" cy="190" r="3" fill="#A5D6FF" />
+    <circle cx="210" cy="200" r="3" fill="#A5D6FF" />
+    <circle cx="220" cy="210" r="3" fill="#A5D6FF" />
+    <circle cx="230" cy="200" r="3" fill="#A5D6FF" />
+    <circle cx="240" cy="190" r="3" fill="#A5D6FF" />
+    <circle cx="250" cy="200" r="3" fill="#A5D6FF" />
+    <circle cx="260" cy="210" r="3" fill="#A5D6FF" />
+    <circle cx="270" cy="200" r="3" fill="#A5D6FF" />
+    <circle cx="280" cy="190" r="3" fill="#A5D6FF" />
+    <circle cx="290" cy="200" r="3" fill="#A5D6FF" />
+    
+    <!-- South America -->
+    <circle cx="300" cy="280" r="3" fill="#A5D6FF" />
+    <circle cx="290" cy="290" r="3" fill="#A5D6FF" />
+    <circle cx="280" cy="300" r="3" fill="#A5D6FF" />
+    <circle cx="290" cy="310" r="3" fill="#A5D6FF" />
+    <circle cx="300" cy="320" r="3" fill="#A5D6FF" />
+    <circle cx="310" cy="310" r="3" fill="#A5D6FF" />
+    <circle cx="320" cy="300" r="3" fill="#A5D6FF" />
+    <circle cx="310" cy="290" r="3" fill="#A5D6FF" />
+    <circle cx="300" cy="330" r="3" fill="#A5D6FF" />
+    <circle cx="290" cy="340" r="3" fill="#A5D6FF" />
+    <circle cx="280" cy="350" r="3" fill="#A5D6FF" />
+    <circle cx="290" cy="360" r="3" fill="#A5D6FF" />
+    <circle cx="300" cy="370" r="3" fill="#A5D6FF" />
+    
+    <!-- Australia -->
+    <circle cx="620" cy="330" r="3" fill="#A5D6FF" />
+    <circle cx="630" cy="340" r="3" fill="#A5D6FF" />
+    <circle cx="640" cy="330" r="3" fill="#A5D6FF" />
+    <circle cx="650" cy="320" r="3" fill="#A5D6FF" />
+    <circle cx="660" cy="330" r="3" fill="#A5D6FF" />
+    <circle cx="670" cy="340" r="3" fill="#A5D6FF" />
+    <circle cx="680" cy="330" r="3" fill="#A5D6FF" />
+    <circle cx="690" cy="320" r="3" fill="#A5D6FF" />
+    <circle cx="630" cy="320" r="3" fill="#A5D6FF" />
+    <circle cx="640" cy="310" r="3" fill="#A5D6FF" />
+    <circle cx="650" cy="300" r="3" fill="#A5D6FF" />
+    <circle cx="660" cy="310" r="3" fill="#A5D6FF" />
+    <circle cx="670" cy="320" r="3" fill="#A5D6FF" />
+
+    <!-- Middle East - Make this region denser with slightly larger dots for focus -->
+    <circle cx="470" cy="200" r="4" fill="#A5D6FF" />
+    <circle cx="480" cy="205" r="4" fill="#A5D6FF" />
+    <circle cx="490" cy="210" r="4" fill="#A5D6FF" />
+    <circle cx="475" cy="215" r="4" fill="#A5D6FF" />
+    <circle cx="485" cy="220" r="4" fill="#A5D6FF" />
+    <circle cx="495" cy="215" r="4" fill="#A5D6FF" />
+    <circle cx="470" cy="210" r="4" fill="#A5D6FF" />
+    <circle cx="465" cy="205" r="4" fill="#A5D6FF" />
+    <circle cx="460" cy="200" r="4" fill="#A5D6FF" />
+  </g>
+</svg> 

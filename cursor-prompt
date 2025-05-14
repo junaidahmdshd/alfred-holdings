@@ -1,0 +1,99 @@
+Please scaffold a new Next.js 15 project named Alfred Holdings with the following configuration and best practices:
+
+✅ Technologies & Tooling
+Next.js 15 (App Router)
+
+Tailwind CSS v4 (with JIT and custom config support)
+
+Headless UI (optional, only if needed for accessible components)
+
+Utility Libraries:
+
+clsx for conditional classnames
+
+tailwind-merge (or twMerge) to handle class merging
+
+class-variance-authority (CVA) for styling patterns
+
+🛠️ Project Configuration
+Code Formatting: Set up Prettier with opinionated defaults
+
+Linting: Configure ESLint with Next.js and Tailwind plugins
+
+Folder Structure:
+
+Use a clean, scalable structure: app/, components/, lib/, styles/, config/, etc.
+
+Add aliases if needed (@/components, @/lib, etc.)
+
+🎨 Design Reference
+Figma file: [https://www.figma.com/design/L6FJJJpUI3O0rDk5EoIe2n/Alfred-Holdings?node-id=1-3694&m=dev]
+
+Typography: Please extract and follow the heading and paragraph font styles from the Figma design — including:
+
+Font family
+Font sizes
+Font weights
+Line heights
+
+Any consistent spacing/margin rules used for text
+
+Implement these in the Tailwind CSS configuration (tailwind.config.ts) under the theme.extend section
+
+and with the use of these configs create base
+
+Base Components: Include a few foundational components like Button, Container, and Heading,Paragraph using cva and clsx
+
+💡 Notes
+Apply best practices for file naming, conventions, and reusable utilities
+
+Include any recommended setup for Tailwind CSS v4 and Next.js 15 compatibility
+
+Prefer TypeScript setup with type safety and meaningful types across components
+
+
+🎨 Interface Screens
+
+1. Landing page
+    Follow the attached figma file using figma MCP
+    Figma file: [https://www.figma.com/design/L6FJJJpUI3O0rDk5EoIe2n/Alfred-Holdings?node-id=1-3694&m=dev]
+
+    There are two responsive layouts:
+
+    One for Desktop ( 1440px )
+    One for Mobile ( 375px )
+
+    Create each section to support responsiveness for both screens 
+    Each section should b pixel perfect same as figma screens
+    Export assets from figma with 2x quality
+
+    -1. Header ( should b same figma, for Desktop it should b centered align and for mobile it should b a menu button same )
+    selectionLink:
+    Desktop:https://www.figma.com/design/L6FJJJpUI3O0rDk5EoIe2n/Alfred-Holdings?node-id=1-6835&t=pBDZt8pFmlW7nZ6P-4
+
+    Mobile: https://www.figma.com/design/L6FJJJpUI3O0rDk5EoIe2n/Alfred-Holdings?node-id=1-10091&t=pBDZt8pFmlW7nZ6P-4
+    
+
+    -2 Hero Section ( should b same as figma, use image same as figma )
+    Desktop:https://www.figma.com/design/L6FJJJpUI3O0rDk5EoIe2n/Alfred-Holdings?node-id=1-3685&t=dLNuns4OR0kZ8iYn-4
+
+    Mobile:https://www.figma.com/design/L6FJJJpUI3O0rDk5EoIe2n/Alfred-Holdings?node-id=1-6841&t=dLNuns4OR0kZ8iYn-4
+
+
+    -3 Legacy Section ( should use same spacing,paddings,gaps)
+    Desktop:https://www.figma.com/design/L6FJJJpUI3O0rDk5EoIe2n/Alfred-Holdings?node-id=1-3697&m=dev
+
+    MObile: https://www.figma.com/design/L6FJJJpUI3O0rDk5EoIe2n/Alfred-Holdings?node-id=1-6854&m=dev
+
+
+    -4 Portfolio Section ( use third-party or custom slider of mobile view .)
+    Desktop:https://www.figma.com/design/L6FJJJpUI3O0rDk5EoIe2n/Alfred-Holdings?node-id=1-3724&m=dev
+    MObile:https://www.figma.com/design/L6FJJJpUI3O0rDk5EoIe2n/Alfred-Holdings?node-id=1-6881&m=dev
+
+    -5 Leadership section 
+    Desktop: https://www.figma.com/design/L6FJJJpUI3O0rDk5EoIe2n/Alfred-Holdings?node-id=1-3735&m=dev
+    Mobile: https://www.figma.com/design/L6FJJJpUI3O0rDk5EoIe2n/Alfred-Holdings?node-id=1-6958&m=dev
+
+    -6 Location Section
+    Desktop:https://www.figma.com/design/L6FJJJpUI3O0rDk5EoIe2n/Alfred-Holdings?node-id=1-3750&m=dev
+    MObile: https://www.figma.com/design/L6FJJJpUI3O0rDk5EoIe2n/Alfred-Holdings?node-id=1-6973&m=dev

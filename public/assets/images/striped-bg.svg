@@ -1,0 +1,6 @@
+<svg width="1200" height="600" viewBox="0 0 1200 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <pattern id="diagonalHatch" patternUnits="userSpaceOnUse" width="20" height="20" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="20" stroke="#E6F0FF" stroke-width="10"/>
+  </pattern>
+  <rect width="1200" height="600" fill="url(#diagonalHatch)" />
+</svg> 

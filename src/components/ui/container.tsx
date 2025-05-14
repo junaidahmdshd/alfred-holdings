@@ -21,7 +21,7 @@ export function Container({
   return (
     <div
       className={cn(
-        fluid ? 'max-w-full' : 'mx-auto max-w-7xl px-4 sm:px-6 lg:px-8',
+        fluid ? 'max-w-full' : 'mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8',
         py && 'py-12 sm:py-16',
         className
       )}
