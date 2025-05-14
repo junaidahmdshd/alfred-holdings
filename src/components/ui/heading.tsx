@@ -23,7 +23,7 @@ const headingVariants = cva('font-semibold tracking-tight', {
       default: 'tracking-tight',
       tight: 'tracking-tighter',
       normal: 'tracking-normal',
-    }
+    },
   },
   defaultVariants: {
     level: 'h2',
@@ -52,10 +52,12 @@ export function Heading({
 
   return (
     <Component
-      className={cn(headingVariants({ level: (level || as || 'h2'), variant, letterSpacing, className }))}
+      className={cn(
+        headingVariants({ level: level || as || 'h2', variant, letterSpacing, className })
+      )}
       {...props}
     >
       {children}
     </Component>
   )
-} 
+}

@@ -25,7 +25,7 @@ const paragraphVariants = cva('leading-7', {
       default: 'tracking-normal',
       tight: 'tracking-tight',
       tighter: 'tracking-tighter',
-    }
+    },
   },
   defaultVariants: {
     size: 'default',
@@ -56,4 +56,4 @@ export function Paragraph({
       {children}
     </p>
   )
-} 
+}

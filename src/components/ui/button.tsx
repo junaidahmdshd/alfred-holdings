@@ -22,7 +22,7 @@ const buttonVariants = cva(
       withIcon: {
         true: 'gap-2',
         false: '',
-      }
+      },
     },
     defaultVariants: {
       variant: 'default',
@@ -32,17 +32,17 @@ const buttonVariants = cva(
   }
 )
 
-export interface ButtonProps 
+export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof buttonVariants> {
-  leftIcon?: React.ReactNode;
-  rightIcon?: React.ReactNode;
+  leftIcon?: React.ReactNode
+  rightIcon?: React.ReactNode
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant, size, leftIcon, rightIcon, withIcon, children, ...props }, ref) => {
-    withIcon = !!(leftIcon || rightIcon);
-    
+    withIcon = !!(leftIcon || rightIcon)
+
     return (
       <button
         className={cn(buttonVariants({ variant, size, withIcon, className }))}
@@ -59,4 +59,4 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 
 Button.displayName = 'Button'
 
-export { Button, buttonVariants } 
+export { Button, buttonVariants }

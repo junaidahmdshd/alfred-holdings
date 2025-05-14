@@ -7,7 +7,7 @@ import { twMerge } from 'tailwind-merge'
  * @returns Merged class string with resolved Tailwind conflicts
  */
 export function cn(...inputs: ClassValue[]) {
-    return twMerge(clsx(inputs))
+  return twMerge(clsx(inputs))
 }
 
 /**
@@ -17,26 +17,26 @@ export function cn(...inputs: ClassValue[]) {
  * @returns Formatted date string
  */
 export function formatDate(
-    date: Date | string | number,
-    options: Intl.DateTimeFormatOptions = {
-        month: 'long',
-        day: 'numeric',
-        year: 'numeric',
-    }
+  date: Date | string | number,
+  options: Intl.DateTimeFormatOptions = {
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric',
+  }
 ) {
-    return new Intl.DateTimeFormat('en-US', {
-        ...options,
-    }).format(new Date(date))
+  return new Intl.DateTimeFormat('en-US', {
+    ...options,
+  }).format(new Date(date))
 }
 
 /**
  * Truncate a string to a specified length
- * @param str - String to truncate 
+ * @param str - String to truncate
  * @param length - Maximum length
  * @returns Truncated string with ellipsis
  */
 export function truncate(str: string, length: number) {
-    return str.length > length ? `${str.substring(0, length)}...` : str
+  return str.length > length ? `${str.substring(0, length)}...` : str
 }
 
 /**
@@ -45,5 +45,5 @@ export function truncate(str: string, length: number) {
  * @returns Promise that resolves after the specified time
  */
 export function sleep(ms: number) {
-    return new Promise((resolve) => setTimeout(resolve, ms))
-} 
+  return new Promise((resolve) => setTimeout(resolve, ms))
+}

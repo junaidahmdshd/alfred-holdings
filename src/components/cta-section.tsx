@@ -1,37 +1,41 @@
-'use client';
+'use client'
 
-import React from 'react';
-import { Container } from './ui/container';
-import { Heading } from './ui/heading';
-import { Paragraph } from './ui/paragraph';
-import { Button } from './ui/button';
-import { AlfredImage } from './ui/image';
+import React from 'react'
+import { Container } from './ui/container'
+import { Heading } from './ui/heading'
+import { Paragraph } from './ui/paragraph'
+import { Button } from './ui/button'
 
 export const CTASection = () => {
   return (
     <section className="w-full bg-[#4AACE3] py-20">
       <Container>
-        <div className="flex flex-col md:flex-row items-center">
+        <div className="flex flex-col items-center md:flex-row">
           {/* Left Content */}
-          <div className="w-full md:w-1/2 mb-12 md:mb-0">
+          <div className="mb-12 w-full md:mb-0 md:w-1/2">
             <div className="max-w-[568px] space-y-8">
               <Heading as="h2" variant="white" className="text-2xl md:text-4xl">
                 Ready to transform your financial journey?
               </Heading>
-              
+
               <Paragraph variant="white" size="lg">
-                Join thousands of satisfied customers who have already discovered the Alfred Holdings advantage.
+                Join thousands of satisfied customers who have already discovered the Alfred
+                Holdings advantage.
               </Paragraph>
-              
-              <div className="flex flex-col sm:flex-row gap-4">
+
+              <div className="flex flex-col gap-4 sm:flex-row">
                 <Button size="lg" className="bg-white text-[#4AACE3] hover:bg-gray-100">
                   Get Started
                 </Button>
-                <Button variant="secondary" size="lg" className="border-white text-white hover:bg-white/10">
+                <Button
+                  variant="secondary"
+                  size="lg"
+                  className="border-white text-white hover:bg-white/10"
+                >
                   Learn More
                 </Button>
               </div>
-              
+
               <div className="pt-4">
                 <Paragraph variant="white" size="sm" className="opacity-80">
                   Have questions? <span className="underline">Contact our support team</span>
@@ -39,13 +43,13 @@ export const CTASection = () => {
               </div>
             </div>
           </div>
-          
+
           {/* Right Image (Placeholder) */}
-          <div className="w-full md:w-1/2 flex justify-center">
-            <div className="relative h-[300px] md:h-[400px] w-full max-w-[500px]">
+          <div className="flex w-full justify-center md:w-1/2">
+            <div className="relative h-[300px] w-full max-w-[500px] md:h-[400px]">
               {/* Illustration placeholder */}
-              <div className="absolute inset-0 bg-white/20 rounded-xl"></div>
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+              <div className="absolute inset-0 rounded-xl bg-white/20"></div>
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transform">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="80"
@@ -66,5 +70,5 @@ export const CTASection = () => {
         </div>
       </Container>
     </section>
-  );
-}; 
+  )
+}

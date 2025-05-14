@@ -1,26 +1,25 @@
-"use client";
+'use client'
 
-import React, { useState } from 'react';
-import { Button } from './ui/button';
-import { Container } from './ui/container';
-import { AlfredImage } from './ui/image';
-import { Link } from './ui/link';
+import React, { useState } from 'react'
+import { Button } from './ui/button'
+import { AlfredImage } from './ui/image'
+import { Link } from './ui/link'
 
 const navLinks = [
   { name: 'About Us', href: '#about' },
   { name: 'Our Portfolio', href: '#portfolio' },
   { name: 'Leadership', href: '#leadership' },
-];
+]
 
 export const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
     <header className="relative w-full bg-[#4AACE3] py-4">
       {/* Desktop View */}
-      <div className="hidden lg:flex justify-center px-[120px]">
-        <div className="bg-white rounded-[38px] flex items-center justify-between w-[706px] border border-[#4AACE3] p-2 pl-5">
-          <div className="flex items-center justify-center ">
+      <div className="hidden justify-center px-[120px] lg:flex">
+        <div className="flex w-[706px] items-center justify-between rounded-[38px] border border-[#4AACE3] bg-white p-2 pl-5">
+          <div className="flex items-center justify-center">
             <AlfredImage
               src="/assets/images/alfred-holdings-logo.png"
               alt="Alfred Holdings"
@@ -29,33 +28,30 @@ export const Header = () => {
               className="h-8 w-auto object-contain"
             />
           </div>
-          
+
           <div className="flex items-center">
             <nav className="flex">
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
                   href={link.href}
-                  className="px-5 py-3 text-[#132B39] font-medium text-base leading-[1.625em] tracking-[-0.01em]"
+                  className="px-5 py-3 text-base leading-[1.625em] font-medium tracking-[-0.01em] text-[#132B39]"
                 >
                   {link.name}
                 </Link>
               ))}
             </nav>
-            
           </div>
-            <Button 
-              className="bg-[#132B39] text-[#EEF7FC] h-12 px-7 py-3 rounded-[30px] font-semibold text-base leading-5 tracking-[-0.02em] uppercase mr-0"
-            >
-              Contact Us
-            </Button>
+          <Button className="mr-0 h-12 rounded-[30px] bg-[#132B39] px-7 py-3 text-base leading-5 font-semibold tracking-[-0.02em] text-[#EEF7FC] uppercase">
+            Contact Us
+          </Button>
         </div>
       </div>
-    
+
       {/* Mobile View */}
-      <div className="lg:hidden md:px-10 px-4 py-3">
-        <div className="flex justify-between items-center w-full">
-          <div className="flex items-center justify-center bg-white pr-4 pl-2 py-2 rounded-full">
+      <div className="px-4 py-3 md:px-10 lg:hidden">
+        <div className="flex w-full items-center justify-between">
+          <div className="flex items-center justify-center rounded-full bg-white py-2 pr-4 pl-2">
             <AlfredImage
               src="/assets/images/alfred-holdings-logo.png"
               alt="Alfred Holdings"
@@ -64,18 +60,13 @@ export const Header = () => {
               className="mx-auto object-contain"
             />
           </div>
-          
+
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="bg-white p-3 rounded-full"
+            className="rounded-full bg-white p-3"
             aria-label="Toggle menu"
           >
-            <AlfredImage
-              src="/assets/images/menu-icon.svg"
-              alt="Menu"
-              width={24}
-              height={24}
-            />
+            <AlfredImage src="/assets/images/menu-icon.svg" alt="Menu" width={24} height={24} />
           </button>
         </div>
       </div>
@@ -83,11 +74,11 @@ export const Header = () => {
       {/* Mobile Menu Overlay */}
       {isMenuOpen && (
         <div className="fixed inset-0 z-50 flex items-start justify-center pt-20">
-          <div className="bg-white rounded-3xl shadow-lg w-full max-w-[343px] relative">
+          <div className="relative w-full max-w-[343px] rounded-3xl bg-white shadow-lg">
             {/* Close button */}
             <button
               onClick={() => setIsMenuOpen(false)}
-              className="absolute top-4 right-4 bg-[#0D2436] rounded-full p-1.5 flex items-center justify-center"
+              className="absolute top-4 right-4 flex items-center justify-center rounded-full bg-[#0D2436] p-1.5"
               aria-label="Close menu"
             >
               <svg
@@ -106,25 +97,25 @@ export const Header = () => {
               </svg>
             </button>
 
-            <div className="flex flex-col text-left py-8 px-6">
+            <div className="flex flex-col px-6 py-8 text-left">
               {/* Nav Links */}
-              <nav className="flex flex-col w-full space-y-5">
+              <nav className="flex w-full flex-col space-y-5">
                 {navLinks.map((link) => (
                   <Link
                     key={link.name}
                     href={link.href}
-                    className="py-1 text-[#132B39] font-medium text-base"
+                    className="py-1 text-base font-medium text-[#132B39]"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {link.name}
                   </Link>
                 ))}
               </nav>
-              
+
               {/* CTA Button */}
-              <div className="w-full mt-6">
-                <Button 
-                  className="w-full bg-[#0D2436] text-white rounded-full font-semibold text-base py-3 px-5"
+              <div className="mt-6 w-full">
+                <Button
+                  className="w-full rounded-full bg-[#0D2436] px-5 py-3 text-base font-semibold text-white"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Contact Us
@@ -135,5 +126,5 @@ export const Header = () => {
         </div>
       )}
     </header>
-  );
-}; 
+  )
+}
