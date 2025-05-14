@@ -121,11 +121,11 @@ export const PortfolioSection = () => {
 
         {/* Mobile Carousel */}
         {isMobile && (
-          <div className="portfolio-slider">
+          <div className="portfolio-slider overflow-hidden px-4">
             <Swiper
               modules={[Pagination]}
               spaceBetween={16}
-              slidesPerView={'auto'}
+              slidesPerView="auto"
               pagination={{
                 clickable: true,
                 bulletClass: 'swiper-pagination-bullet custom-bullet',
@@ -193,7 +193,7 @@ interface PortfolioCardProps {
   isHorizontal?: boolean
 }
 
-const PortfolioCard = ({ item, isHorizontal = false }: PortfolioCardProps) => {
+const PortfolioCard = ({ item, isHorizontal = false }: PortfolioCardProps): React.ReactElement => {
   const isCreditMarket = item.id === 2
   const isHolidayMarket = item.id === 3
   const isInvestmentMarket = item.id === 4
@@ -201,10 +201,10 @@ const PortfolioCard = ({ item, isHorizontal = false }: PortfolioCardProps) => {
   const isMyAlfred = item.id === 6
 
   // Determine character image styles
-  const getCharacterImageStyles = () => {
+  const getCharacterImageStyles = (): React.CSSProperties => {
     if (isHorizontal) {
       return {
-        position: 'absolute' as const,
+        position: 'absolute',
         right: 0,
         bottom: 0,
         width: '50%',
@@ -218,7 +218,7 @@ const PortfolioCard = ({ item, isHorizontal = false }: PortfolioCardProps) => {
 
     if (isMyAlfred) {
       return {
-        position: 'absolute' as const,
+        position: 'absolute',
         right: 0,
         bottom: 0,
         width: '100%',
@@ -232,7 +232,7 @@ const PortfolioCard = ({ item, isHorizontal = false }: PortfolioCardProps) => {
 
     if (isCreditMarket) {
       return {
-        position: 'absolute' as const,
+        position: 'absolute',
         right: '30px',
         bottom: '30px',
         width: '160px',
@@ -243,7 +243,7 @@ const PortfolioCard = ({ item, isHorizontal = false }: PortfolioCardProps) => {
 
     if (isInvestmentMarket) {
       return {
-        position: 'absolute' as const,
+        position: 'absolute',
         right: '40px',
         bottom: '40px',
         width: '280px',
@@ -254,7 +254,7 @@ const PortfolioCard = ({ item, isHorizontal = false }: PortfolioCardProps) => {
 
     if (isHolidayMarket) {
       return {
-        position: 'absolute' as const,
+        position: 'absolute',
         right: 0,
         bottom: 0,
         width: '100%',
@@ -265,7 +265,7 @@ const PortfolioCard = ({ item, isHorizontal = false }: PortfolioCardProps) => {
 
     // Default for vertical cards
     return {
-      position: 'absolute' as const,
+      position: 'absolute',
       right: 0,
       bottom: 0,
       width: '70%',
@@ -275,10 +275,10 @@ const PortfolioCard = ({ item, isHorizontal = false }: PortfolioCardProps) => {
   }
 
   // Determine content container styles based on card type
-  const getContentContainerStyles = () => {
+  const getContentContainerStyles = (): React.CSSProperties => {
     if (isHorizontal) {
       return {
-        position: 'relative' as const,
+        position: 'relative',
         zIndex: 2,
         maxWidth: '50%',
         padding: '40px',
@@ -287,31 +287,31 @@ const PortfolioCard = ({ item, isHorizontal = false }: PortfolioCardProps) => {
 
     if (isInvestmentMarket) {
       return {
-        position: 'relative' as const,
+        position: 'relative',
         zIndex: 2,
         width: '100%',
         padding: '32px',
         height: 'auto',
         display: 'flex',
-        flexDirection: 'column' as const,
-        justifyContent: 'flex-start' as const,
+        flexDirection: 'column',
+        justifyContent: 'flex-start',
       }
     }
 
     if (isHolidayMarket) {
       return {
-        position: 'relative' as const,
+        position: 'relative',
         zIndex: 2,
         width: '100%',
         padding: '32px',
         display: 'flex',
-        flexDirection: 'column' as const,
+        flexDirection: 'column',
         height: '100%',
       }
     }
 
     return {
-      position: 'relative' as const,
+      position: 'relative',
       zIndex: 2,
       width: '100%',
       padding: '32px',
@@ -390,11 +390,11 @@ const PortfolioCard = ({ item, isHorizontal = false }: PortfolioCardProps) => {
 }
 
 // PortfolioCardMobile component specifically for mobile view
-const PortfolioCardMobile = ({ item }: { item: PortfolioItemProps }) => {
+const PortfolioCardMobile = ({ item }: { item: PortfolioItemProps }): React.ReactElement => {
   const isCreditMarket = item.id === 2
 
   // Get image size based on card type
-  const getImageStyle = () => {
+  const getImageStyle = (): { width: string; height: string } => {
     if (item.id === 3) {
       return {
         width: '100%',

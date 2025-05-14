@@ -1,15 +1,15 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   --background: #ffffff;
-  --foreground: #132B39;
-  --alfred-primary: #132B39;
-  --alfred-secondary: #475F6B;
-  --alfred-disabled: #B9C5C9;
-  --alfred-light: #EEF7FC;
-  --alfred-border: #DFE3E7;
-  --alfred-background: #F4F5F5;
-  --alfred-muted: #DFE3E7;
+  --foreground: #132b39;
+  --alfred-primary: #132b39;
+  --alfred-secondary: #475f6b;
+  --alfred-disabled: #b9c5c9;
+  --alfred-light: #eef7fc;
+  --alfred-border: #dfe3e7;
+  --alfred-background: #f4f5f5;
+  --alfred-muted: #dfe3e7;
 }
 
 @theme inline {
@@ -45,12 +45,12 @@ body {
 .portfolio-swiper .swiper-pagination-bullet {
   width: 8px;
   height: 8px;
-  background: #DFE3E7;
+  background: #dfe3e7;
   opacity: 1;
 }
 
 .portfolio-swiper .swiper-pagination-bullet-active {
-  background: #132B39;
+  background: #132b39;
   opacity: 1;
 }
 

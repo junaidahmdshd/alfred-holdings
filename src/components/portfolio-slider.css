@@ -15,13 +15,13 @@
   height: 8px;
   display: inline-block;
   border-radius: 50%;
-  background: #DFE3E7;
+  background: #dfe3e7;
   opacity: 1;
   margin: 0 4px;
 }
 
 .portfolio-slider .custom-bullet-active {
-  background-color: #132B39;
+  background-color: #132b39;
 }
 
 .portfolio-slider .swiper-slide {
@@ -34,4 +34,4 @@
 .portfolio-slider .swiper-slide > div {
   height: 592px;
   width: 100%;
-} 
+}
