@@ -1,8 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Alfred Holdings
+
+A modern Next.js 15 application with Tailwind CSS v4, showcasing best practices for building high-quality web applications.
+
+## Technologies
+
+- **Next.js 15** with App Router
+- **Tailwind CSS v4** with JIT and custom configuration
+- **Headless UI** for accessible UI components
+- **TypeScript** for type safety
+- **Utility Libraries**:
+  - `clsx` for conditional classnames
+  - `tailwind-merge` for class merging
+  - `class-variance-authority` for component styling patterns
+
+## Project Structure
+
+```
+alfred-holdings/
+├── public/             # Static assets
+├── src/
+│   ├── app/            # Next.js App Router
+│   ├── components/     # React components
+│   │   └── ui/         # Reusable UI components
+│   ├── lib/            # Utility functions
+│   │   └── utils.ts    # Common utilities
+│   ├── styles/         # Global styles
+│   └── config/         # Application configuration
+├── tailwind.config.ts  # Tailwind CSS configuration
+├── postcss.config.mjs  # PostCSS configuration
+├── tsconfig.json       # TypeScript configuration
+└── package.json        # Dependencies
+```
 
 ## Getting Started
 
-First, run the development server:
+First, install the dependencies:
+
+```bash
+npm install
+# or
+yarn
+# or
+pnpm install
+# or
+bun install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
@@ -16,21 +60,45 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Modern UI Components** - Button, Container, Heading with consistent styling
+- **Responsive Design** - Mobile-first approach with responsive breakpoints
+- **Type Safety** - Fully typed components and utilities
+- **Developer Experience** - Code formatting with Prettier and linting with ESLint
+
+## Base Components
+
+The project includes several foundational components:
+
+- **Button** - With variants, sizes, and styling options
+- **Container** - For consistent layout wrapping
+- **Heading** - For typography hierarchy with variants
+
+## Configuration
+
+### Tailwind CSS
+
+Tailwind CSS is configured with JIT and a custom configuration, including:
+
+- Custom color palette
+- Animation and transition utilities
+- Extended typography options
+
+### ESLint and Prettier
+
+Code quality is maintained with:
+
+- ESLint for code quality
+- Prettier for code formatting
+- Integration with TypeScript for type checking
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Tailwind CSS](https://tailwindcss.com/docs) - learn about Tailwind CSS.
+- [TypeScript](https://www.typescriptlang.org/docs) - learn about TypeScript.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## License
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT
